@@ -287,11 +287,11 @@ class RAGSafetyStockSystem:
             raise
 
 db_config = DatabaseConfig(
-    host=os.getenv("DB_HOST", "148.113.6.219"),
+    host=os.getenv("DB_HOST", "localhost"),
     port=int(os.getenv("DB_PORT", 5432)),
     database=os.getenv("DB_NAME", "rag_db"),
     user=os.getenv("DB_USER", "postgres"),
-    password=os.getenv("DB_PASSWORD", "stackmax")
+    password=os.getenv("DB_PASSWORD", "password")
 )
 
 rag_system = RAGSafetyStockSystem(db_config)
