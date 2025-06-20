@@ -99,10 +99,10 @@ with st.sidebar:
     st.subheader("Settings")
     st.write("This is a simple chat application using Postgres. Connect to the database and start chatting.")
     
-    st.text_input("Host", value="192.168.190.127", key="Host")
+    st.text_input("Host", value="localhost", key="Host")
     st.text_input("Port", value="5432", key="Port")
     st.text_input("User", value="postgres", key="User")
-    st.text_input("Password", type="password", value="stackmax", key="Password")
+    st.text_input("Password", type="password", value="password", key="Password")
     st.text_input("Database", value="rag_db", key="Database")
     
     if st.button("Connect"):
